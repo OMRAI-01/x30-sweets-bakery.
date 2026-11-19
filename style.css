@@ -1,0 +1,18 @@
+:root{--cream:#FFF6E9;--choc:#3B2218;--berry:#C2255C;--caramel:#B7761F;--mint:#E6F2EA}
+body{font-family:'Poppins',sans-serif;background:var(--cream);color:var(--choc);line-height:1.65}
+h1,h2,h3,.navbar-brand{font-family:'Playfair Display',serif}
+.navbar{background:var(--choc)}
+.navbar .nav-link,.navbar-brand{color:var(--cream)!important}
+.navbar .nav-link:hover{color:#F4C98B!important}
+.hero{background:var(--mint);padding:4rem 0}
+.hero h1{font-size:clamp(2rem,5vw,3.4rem)}
+.btn-berry{background:var(--berry);color:#fff;border:0;transition:transform .2s ease,background .2s ease}
+.btn-berry:hover{background:#9c1a49;color:#fff;transform:translateY(-3px)}
+.card-sweet{background:#fff;border:2px solid var(--caramel);border-radius:.5rem}
+.table thead{background:var(--choc);color:var(--cream)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--berry);outline-offset:2px}
+footer{background:var(--choc);color:var(--cream)}
+#orderList li{display:flex;justify-content:space-between;gap:1rem}
+@media (max-width:767.98px){.hero{padding:2rem 0;text-align:center}.hero svg{max-width:180px}}
+@media (min-width:992px){.hero{padding:6rem 0}.hero svg{max-width:340px}}
+@media (prefers-reduced-motion:reduce){.btn-berry{transition:none}}
